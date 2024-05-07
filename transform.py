@@ -5,6 +5,7 @@
 """
 
 import os, sys
+import utils
 exec(open('my_project.conf').read())
 
 # scan files
@@ -19,7 +20,7 @@ for file in dirs:
    if file_ext == '.csv':
       print('ok')
    elif file_ext == '.npz':
-      print('special')
+      print(f"{file_ext} files have to be unziped and transformed into .csv file")
    else:
       print(f"Format {file_ext} not supported")
 
