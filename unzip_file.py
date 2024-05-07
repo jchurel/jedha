@@ -27,6 +27,6 @@ for file in dirs:
       df = pd.DataFrame.from_dict(data)
       df.to_csv(f"{data_raw_path}{file_name}.csv")
       file_size = len(df)
-      print(f"{file_size} lines extracted in file {{data_raw_path}{file_name}.csv}")
+      print(f"{file_size} lines extracted in file {data_raw_path}{file_name}.csv")
    else:
       print(f"Format {file_ext} not supported")
